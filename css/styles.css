@@ -38,7 +38,7 @@ header {
 }
 
 .header-sub {
-  font-family: input-sans;
+  font-family: input-sans, sans-serif;
   font-weight: 300;
   color: #19ff00;
 }
@@ -66,13 +66,13 @@ header {
 p {
   margin: 0 auto;
   font-size: 0.85em;
-  font-family: input-sans;
+  font-family: input-sans, sans-serif;
   font-weight: 300;
   color: #19ff00;
 }
 
 .projects {
-  background-color: #747474;
+  background-color: #4a4a4a;
   border-top: 2px solid black;
   padding-bottom: 50px;
 }
@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-  font-family: input-sans;
+  font-family: input-sans, sans-serif;
   font-size: 1em;
   font-weight: 300;
   color: #19ff00;
@@ -154,4 +154,25 @@ footer p {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-wrapper {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content-wrapper {
+    max-width: 250px;
+  }
+
+  h1 {
+    margin: 50px;
+  }
 }
