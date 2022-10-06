@@ -18,7 +18,11 @@ header {
   background-color: #4a4a4a;
   border-bottom: 2px solid black;
   text-align: center;
-  padding: 20px 0px;
+  height: 20vh;
+}
+
+.header-inner {
+  margin: 25px 10px;
 }
 
 .header-top {
@@ -38,7 +42,14 @@ header {
   max-width: 250px;
   margin: 0 auto;
   margin-bottom: 75px;
-  height: 85vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  margin: 50px auto 10px;
+  width: 50px;
 }
 
 .portrait {
