@@ -19,7 +19,8 @@ img {
 }
 
 header {
-  background-color: #4a4a4a;
+  background: url(/images/header_bkg.png);
+  background-size: cover;
   border-bottom: 2px solid black;
   text-align: center;
   height: 20vh;
@@ -71,7 +72,7 @@ p {
 }
 
 .projects {
-  background-color: #4a4a4a;
+  background-color: #747474;
   border-top: 2px solid black;
   padding-bottom: 50px;
 }
