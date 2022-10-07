@@ -170,19 +170,18 @@ footer p {
 }
 
 @media screen and (min-width: 600px) {
-  .project-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
   .content-wrapper {
-    max-width: 150px;
+    max-width: 350px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
   .content-wrapper {
-    max-width: 250px;
+    max-width: 300px;
   }
 
   h1 {
