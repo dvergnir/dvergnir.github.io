@@ -14,10 +14,6 @@ main {
   background-color: #3a3a3a;
 }
 
-img {
-  max-width: 100%;
-}
-
 header {
   background: url(/images/header_bkg.png);
   background-size: cover;
@@ -34,11 +30,11 @@ header {
   font-family: ethnocentric, sans-serif;
   font-size: 1.4em;
   font-weight: 300;
-  color: white;
+  color: #19ff00;
 }
 
 .header-sub {
-  font-family: input-sans, sans-serif;
+  font-family: ethnocentric, sans-serif;
   font-weight: 300;
   color: #19ff00;
 }
@@ -52,14 +48,15 @@ header {
   flex-direction: column;
 }
 
-.arrow {
+.arrow,
+.arrow-up {
   margin: 50px auto 10px;
   width: 50px;
 }
 
 .portrait {
   display: block;
-  max-width: 100px;
+  max-width: 150px;
   margin: 50px auto;
 }
 
@@ -68,7 +65,7 @@ p {
   font-size: 0.85em;
   font-family: input-sans, sans-serif;
   font-weight: 300;
-  color: #19ff00;
+  color: white;
 }
 
 .projects {
@@ -105,7 +102,6 @@ h3 {
 .content-wrapper {
   max-width: 250px;
   margin: 0 auto;
-  border: 1px solid #19ff00;
   border-radius: 10px;
   background-color: #3a3a3a;
   padding: 10px;
@@ -118,20 +114,21 @@ h3 {
   padding: 25px;
 }
 
-.links:hover {
-  transform: scale(1);
-}
-
 .screenshot {
   border-radius: 10px;
+  width: 100%;
 }
 
-.project-icon {
+.project-icon,
+.mail,
+.linkedin {
   transform: scale(0.95);
   cursor: pointer;
 }
 
-.project-icon:hover {
+.project-icon:hover,
+.mail:hover,
+.linkedin:hover {
   transform: scale(1);
 }
 
@@ -141,9 +138,12 @@ footer {
   text-align: center;
 }
 
-.linkedin {
-  display: block;
+.social {
+  display: flex;
+  justify-content: space-around;
   margin: 0 auto;
+  width: 100%;
+  max-width: 50px;
 }
 
 footer p {
@@ -154,6 +154,15 @@ footer p {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+.arrow-up {
+  display: block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 600px) {
