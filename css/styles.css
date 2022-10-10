@@ -14,6 +14,10 @@ main {
   background-color: #3a3a3a;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background: url(/images/header_bkg.png);
   background-size: cover;
@@ -167,6 +171,11 @@ footer p {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+#gh-link {
+  text-decoration: underline;
+  color: #19ff00;
 }
 
 @media screen and (min-width: 600px) {
